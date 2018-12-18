@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="progr_setupPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="TblProgView1" RangeSize="25" DataControl="AppModuleDataControl" id="TblProgView1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="TblProgView1Iterator" id="ProgId">
+      <AttrNames>
+        <Item Value="ProgId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TblProgView1Iterator" id="Name">
+      <AttrNames>
+        <Item Value="Name"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TblProgView1Iterator" id="Ast">
+      <AttrNames>
+        <Item Value="Ast"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="TblProgView1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="TblProgView1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="TblProgView1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="TblProgView1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>

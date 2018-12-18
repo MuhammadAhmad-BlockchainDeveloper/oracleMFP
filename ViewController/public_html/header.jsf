@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+  <af:xmlContent>
+    <afc:component>
+      <afc:description/>
+      <afc:display-name>header</afc:display-name>
+      <facet>
+        <facet-name>
+          menu bar
+        </facet-name>
+      </facet>
+      <facet>
+        <facet-name>
+          header
+        </facet-name>
+      </facet>
+      <afc:attribute>
+        <afc:attribute-name>center</afc:attribute-name>
+        <afc:attribute-class>java.lang.String</afc:attribute-class>
+      </afc:attribute>
+    </afc:component>
+  </af:xmlContent>
+  <af:facetRef facetName="header"/>
+  <af:menuBar id="pt_mb1">
+    <af:menu text="Main Setup" id="pt_m1"/>
+  </af:menuBar>
+</af:pageTemplateDef>

@@ -1,0 +1,8 @@
+Create table Tbl_Prog
+(
+Prog_ID		Varchar2(3),
+Name		Varchar2(150),
+AST		cHAR(1),
+Constraint Pk_Tbl_Prog Primary Key (Prog_Id)
+)
+/
